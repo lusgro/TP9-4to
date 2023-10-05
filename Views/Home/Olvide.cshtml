@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Olvide mi contraseña";
+}
+
+<div class="centrado">
+    <h1>Ingresa los datos para recuperar tu contraseña</h1>
+    <form method="post" action='@Url.Action("RecuperarContraseña")'>
+        <div class="mb-3">
+            <label for="emailInput" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailInput" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="seguridadInput" class="form-label">Nombre de tu mascota</label>
+            <input type="text" class="form-control" id="seguridadInput" aria-describedby="helpSeguridad" name="preguntaSeguridad">
+        </div>
+        <button type="submit" class="btn btn-primary" id="botonEnviar">Registrarse</button>
+    </form>
+    <p>@ViewBag.Resultado</p>
+</div>

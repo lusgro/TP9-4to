@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Bienvenido";
+}
+
+<div class="centrado">
+    <h1>Bienvenido @ViewBag.Usuario.nombre @ViewBag.Usuario.apellido</h1>
+    <p><b>Usuario:</b> @ViewBag.Usuario.username</p>
+    <p><b>Contraseña:</b> @ViewBag.Usuario.password</p>
+    <p><b>Correo:</b> @ViewBag.Usuario.email</p>
+    <p><b>Nombre de mascota:</b> @ViewBag.Usuario.preguntaSeguridad</p>
+</div>
